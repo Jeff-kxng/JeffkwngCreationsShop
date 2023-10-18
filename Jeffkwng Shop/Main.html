@@ -5,69 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clothing Store</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
 </head>
 <body>
 <header>
   <h1>Jeffkwng Creations Shop</h1>
   <div class="cart">
-    <button id="cart-button">View Cart</button>
+    <button id="cart-button" class="cart-button">View Cart</button>
+    <div class="cart-count">0</div> <!-- The cart count will be updated via JavaScript -->
   </div>
 </header>
 <div class="container">
   <h2 class="title">Discover the Latest Trends!</h2>
-  <div class="shop-content">
-    <div class="clothing-item">
-      <img src="item1.jpg" alt="Clothing Item 1">
-      <h3>Casual Shirt</h3>
-      <p>$39.99</p>
-    </div>
-    <div class="clothing-item">
-      <img src="item2.jpg" alt="Clothing Item 2">
-      <h3>Summer Dress</h3>
-      <p>$49.99</p>
-    </div>
-    <div class="clothing-item">
-      <img src="item3.jpg" alt="Clothing Item 3">
-      <h3>Jeans</h3>
-      <p>$29.99</p>
-    </div>
-    <div class="clothing-item">
-      <img src="item4.jpg" alt="Clothing Item 4">
-      <h3>Leather Jacket</h3>
-      <p>$79.99</p>
-    </div>
-    <div class="clothing-item">
-      <img src="item5.jpg" alt="Clothing Item 5">
-      <h3>Maxi Skirt</h3>
-      <p>$34.99</p>
-    </div>
-    <div class="clothing-item">
-      <img src="item6.jpg" alt="Clothing Item 6">
-      <h3>Sweatshirt</h3>
-      <p>$45.99</p>
-    </div>
-    <div class="clothing-item">
-    <img src="item7.jpg" alt="Clothing Item 7">
-    <h3>Suit Trousers</h3>
-    <p>$59.99</p>
-  </div>
-  <div class="clothing-item">
-    <img src="item8.jpg" alt="Clothing Item 8">
-    <h3>Floral Dress</h3>
-    <p>$54.99</p>
-  </div>
-  <div class="clothing-item">
-    <img src="item9.jpg" alt="Clothing Item 9">
-    <h3>Tie-Dye T-shirt</h3>
-    <p>$19.99</p>
-  </div>
-  <div class="clothing-item">
-    <img src="item10.jpg" alt="Clothing Item 10">
-    <h3>Skinny Jeans</h3>
-    <p>$35.99</p>
+  <div class="shop-content" id="shop-content">
+    <!-- Clothing items will be added here dynamically -->
   </div>
 </div>
+<div class="cart-dialog">
+  <h2>Your Cart</h2>
+  <div class="cart-content" id="cart-content">
+    <!-- Cart items will be added here dynamically -->
+  </div>
+  <p class="total-price">Total: $0.00</p>
+  <button id="cart-close">Close Cart</button>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
